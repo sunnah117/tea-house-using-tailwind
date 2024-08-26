@@ -1,60 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Tea House</title>
-     <!-- manrope font link -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-     <!-- font awesome link -->
-     <script src="https://kit.fontawesome.com/6aa1e7615e.js" crossorigin="anonymous"></script>
-     <!-- tailwind link -->
-     <script src="https://cdn.tailwindcss.com"></script>
-     <!-- customizing css -->
-     <script>
-          tailwind.config = {
-            theme: {
-              extend: {
-                colors: {
-                  clifford: '#da373d',
-                }
-              }
-            }
-          }
-        </script>
-</head>
-<body>
-     <!-- main content  -->
-      <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
-        <!-- header section -->
-         <header class="flex pt-10 mb-50">
-            <!-- content -->
-             <div>
-           <h1 class="text-5xl lg:text-7xl">It's good <br> 
-            tea time at The <br> Tea House</h1>
-            <p class="text-gray-700 w-3/4 my-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo earum distinctio modi delectus culpa. </p>
-            <button class="bg-gradient-to-r from-orange-500 to-red-500 ...  px-4 py-4 rounded-lg text-white font-bold">Explore More  <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
-             </div>
-             <!-- image -->
-              <div class="relative">
-            <!--juice image -->
-            <img src="images/banner.png " alt="">
-            <div  class=" absolute flex items-center bg-white shadow-lg px-2 py-2 lg:py-5 rounded-lg md:px-10 top-28 lg:left-28 md:top-80 md:left-32 ">
-               <!-- card text -->
-              <div> <i class=" text-2xl font-bold text-amber-500 fa-regular fa-star pr-2"></i>
-              </div>
-              <!-- card texts -->
-             <div>
-              <h2 class="lg:text-2xl font-bold" >5.00</h2>
-              <p class="text-gray-700">trust iur products</p>
-             </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tea House</title>
+    <!-- manrope font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome link -->
+    <script
+      src="https://kit.fontawesome.com/6aa1e7615e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- customizing css -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- main content  -->
+    <main class="max-w-screen-xl mx-auto px-10 lg:px-20">
+      <!-- header section -->
+      <header class="grid grid-cols-1 gap-5  lg:flex pt-10 mb-50">
+        <!-- content -->
+        <div>
+          <h1 class="text-5xl lg:text-7xl">
+            It's good <br/>
+            tea time at The <br class="md:block  hidden" />
+            Tea House
+          </h1>
+          <p class="text-gray-700 w-3/4 my-5">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo earum
+            distinctio modi delectus culpa.
+          </p>
+       
+        <button
+        class="bg-gradient-to-r from-orange-500 to-red-500 ... px-4 py-4 rounded-lg text-white font-bold">
+      
+        Explore More <i class="fa-solid fa-arrow-right -rotate-45"></i>
+      </button>
+      
+        </div>
+        <!-- image -->
+        <div class="relative">
+          <!--juice image -->
+          <img src="images/banner.png " alt="" />
+          <div
+            class="absolute flex items-center bg-white shadow-lg px-2 py-2 lg:py-5 rounded-lg md:px-10 top-48 lg:left-28 md:top-80 md:left-32">
+            <!-- card text -->
+            <div>
+              <i class="text-2xl font-bold text-amber-500 fa-regular fa-star pr-2"></i>
             </div>
-             
+            <!-- card texts -->
+            <div>
+              <h2 class="lg:text-2xl font-bold">5.00</h2>
+              <p class="text-gray-700">trust iur products</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- featured section -->
+      <section class="py-8 lg;py-30">
+        <!-- heading text -->
+        <div class="text-center mb-8">
+          <h1 class="text-2xl lg:text-4xl font-bold mb-5">
+            our featured products
+          </h1>
+          <p class="text-gray-700">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+            aperiam atque adipisci error assumenda et est iure quas.
+          </p>
+        </div>
+        <!-- 4 cards -->
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
+          <div class="bg-gray-200 rounded-lg overflow-hidden text-center">
+            <img class="pt-4 mx-auto" src="images/tea-1.png" alt="" />
+            <h1 class="font-bold">Tea Milk</h1>
+            <p class="text-gray-700 pb-4">Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="bg-gray-200 rounded-lg overflow-hidden text-center">
+            <img class="pt-4 mx-auto" src="images/tea-2.png" alt="" />
+            <h1 class="font-bold">Tea Milk</h1>
+            <p class="text-gray-700 pb-4">Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="bg-gray-200 rounded-lg overflow-hidden text-center">
+            <img class="pt-4 mx-auto" src="images/tea-3.png" alt="" />
+            <h1 class="font-bold">Tea Milk</h1>
+            <p class="text-gray-700 pb-4">Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="bg-gray-200 rounded-lg overflow-hidden text-center">
+            <img class="pt-4 mx-auto" src="images/tea-4.png" alt="" />
+            <h1 class="font-bold">Tea Milk</h1>
+            <p class="text-gray-700 pb-4">Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </section>
+      <!-- great tea section -->
+       <section class="mb-24 mt-20">
+        <div  class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <!-- image -->
+        <div class="grid grid-cols-2 grid-rows-3 gap-4">
+          <div class=" h-38 bg-gradient-to-r from-pink-300 to-pink-200 ... rounded-xl">
+
+          </div>
+          <div class="bg-stone-200  rounded-xl row-span-2">
+            <img class="my-5 mx-auto" src="images/fresh-1.png" alt="">
+          </div>
+          <div class="bg-stone-200  rounded-xl row-span-2">
+            <img class="py-5 mx-auto" src="images/fresh-2.png" alt="">
+          </div>
+          <div class=" h-38 bg-gradient-to-r from-gray-300 to-gray-200 ... rounded-xl">
+
+          </div>
           
-              </div>
-         </header>
-      </main>
-</body>
+        </div>
+        <!-- text -->
+        <div>
+          <h1 class="text-3xl font-bold mb-5">greaty tea,freshly presented</h1>
+          <p  class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id natus odit iste debitis minima quae eum suscipit! Ut, repellat libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil excepturi sit quia ducimus est officiis voluptatibus eaque porro saepe omnis!</p>
+          <br>
+          <h2 class="text-xl font-bold mb-5" >unique taste</h2>
+          <p  class="text-gray-700">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, ducimus? a.</p>
+          <br>
+          <h2 class="text-xl font-bold mb-5">unique quality</h2>
+          <p class="text-gray-700">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, asperiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, eveniet.gg.</p>
+        </div>
+        </div>
+       </section>
+    </main>
+  </body>
 </html>
